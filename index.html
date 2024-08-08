@@ -11,18 +11,114 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <picture>
-      <source
-        media="(max-width: 1024px)"
-        srcset="
-          https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawkmobile.png
-        "
-      />
-      <img
-        src="https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawkdesktop.png"
-        alt="Hawk"
-      />
-    </picture>
+    <style>
+      .fxs_fedtracker-ecocal-banner {
+        background: #304c70;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fxs_fedtracker-ecocal-banner-content {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .fxs_fedtracker-ecocal-banner-title-description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: #fff;
+      }
+      .fxs_fedtracker-ecocal-banner-title {
+        font-family: Roboto;
+        font-size: 20.8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+      .fxs_fedtracker-ecocal-banner-description {
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+      }
+      .fxs_fedtracker-ecocal-banner-gradient {
+        background: linear-gradient(93deg, #ffb259 22.14%, #fff 135.14%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      a.fxs_fedtracker-ecocal-banner-link,
+      a.fxs_fedtracker-ecocal-banner-link:hover {
+        padding: 8px 24px;
+        color: #fff;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12.8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+        background: #e4871b;
+      }
+      a.fxs_fedtracker-ecocal-banner-link:hover {
+        background: #e99f49;
+      }
+      @media (min-width: 768px) {
+        .fxs_fedtracker-ecocal-banner {
+          flex-direction: row;
+        }
+
+        .fxs_fedtracker-ecocal-banner-content {
+          padding: 24px;
+        }
+        .fxs_fedtracker-ecocal-banner-title {
+          font-size: 28px;
+          line-height: 32px;
+        }
+      }
+    </style>
+    <div class="fxs_fedtracker-ecocal-banner">
+      <picture>
+        <source
+          media="(max-width: 1024px)"
+          srcset="
+            https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawkmobile.png
+          "
+        />
+        <img
+          src="https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawkdesktop.png"
+          alt="Hawk"
+        />
+      </picture>
+      <div class="fxs_fedtracker-ecocal-banner-content">
+        <div class="fxs_fedtracker-ecocal-banner-title-description">
+          <p class="fxs_fedtracker-ecocal-banner-title">
+            <span>Get sentiment scores with our </span>
+            <span class="fxs_fedtracker-ecocal-banner-gradient"
+              >FedTracker!</span
+            >
+          </p>
+          <p class="fxs_fedtracker-ecocal-banner-title-description">
+            Do you want to know how Fed members' speeches are affecting the
+            market? Now you can!
+            <strong>Log in to FXStreet and get the FedTracker score</strong>
+            directly in the Economic Calendar. If you are already registered, no
+            login is needed. All you have to do is wait for the next speech!
+          </p>
+        </div>
+        <a
+          class="fxs_fedtracker-ecocal-banner-link"
+          href="https://www.fxstreet.com/account/login?uriToRedirect=https%3A%2F%2Fwww.fxstreet.com%2Feconomic-calendar&step=login-options"
+          >Log in</a
+        >
+      </div>
+    </div>
   </body>
 </html>
