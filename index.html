@@ -23,9 +23,11 @@
         display: flex;
         flex-direction: column;
       }
+
       .fxs_fedtracker-ecocal-banner img {
         width: 100%;
       }
+
       .fxs_fedtracker-ecocal-banner p {
         margin: 0;
       }
@@ -113,7 +115,7 @@
     <div class="fxs_fedtracker-ecocal-banner">
       <picture>
         <source
-          media="(max-width: 1024px)"
+          media="(max-width: 768px)"
           srcset="
             https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawkmobile.png
           "
@@ -142,6 +144,8 @@
         <a
           id="fxs_fedtracker-ecocal-banner-link"
           class="fxs_fedtracker-ecocal-banner-link"
+          data-ga4event-clk-name="features-calendar_click"
+          data-ga4event-element="log-in"
           href="https://www.fxstreet.com/account/login?uriToRedirect=https%3A%2F%2Fwww.fxstreet.com%2Feconomic-calendar&step=login-options"
           >Log in</a
         >
