@@ -20,9 +20,11 @@
         display: flex;
         flex-direction: column;
       }
+
       .fxs_fedtracker-ecocal-banner p {
         margin: 0;
       }
+
       .fxs_fedtracker-ecocal-banner-content {
         padding: 16px;
         display: flex;
@@ -38,6 +40,7 @@
         gap: 8px;
         color: #fff;
       }
+
       .fxs_fedtracker-ecocal-banner-title {
         font-family: Roboto;
         font-size: 20.8px;
@@ -45,6 +48,7 @@
         font-weight: 400;
         line-height: 22.4px;
       }
+
       .fxs_fedtracker-ecocal-banner-description {
         font-family: Roboto;
         font-size: 12px;
@@ -52,28 +56,40 @@
         font-weight: 400;
         line-height: 18px;
       }
+
       .fxs_fedtracker-ecocal-banner-gradient {
         background: linear-gradient(93deg, #ffb259 22.14%, #fff 135.14%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+
       a.fxs_fedtracker-ecocal-banner-link,
       a.fxs_fedtracker-ecocal-banner-link:hover {
-        padding: 8px 24px;
         color: #fff;
+        text-decoration: none;
+      }
+
+      a.fxs_fedtracker-ecocal-banner-link {
+        display: none;
+        background: #e4871b;
+        padding: 8px 24px;
         text-align: center;
         font-family: Roboto;
         font-size: 12.8px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-decoration: none;
-        background: #e4871b;
       }
+
+      a.fxs_fedtracker-ecocal-banner-link.show {
+        display: block;
+      }
+
       a.fxs_fedtracker-ecocal-banner-link:hover {
         background: #e99f49;
       }
+
       @media (min-width: 768px) {
         .fxs_fedtracker-ecocal-banner {
           flex-direction: row;
@@ -82,6 +98,7 @@
         .fxs_fedtracker-ecocal-banner-content {
           padding: 24px;
         }
+
         .fxs_fedtracker-ecocal-banner-title {
           font-size: 28px;
           line-height: 32px;
@@ -125,5 +142,12 @@
         >
       </div>
     </div>
+    <script>
+      if (window.FXStreet.Resource.UserInfo.IsLogged) {
+        document
+          .getElementById("fxs_fedtracker-ecocal-banner-link")
+          .classList.add("show");
+      }
+    </script>
   </body>
 </html>
