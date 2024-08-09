@@ -24,9 +24,13 @@
         flex-direction: column;
       }
 
-      .fxs_fedtracker-ecocal-banner img {
-        max-width: 100%;
-        min-height: 100%;
+      .fxs_fedtracker-ecocal-banner-img {
+        width: 100%;
+        padding: 23% 0 0 0;
+        background-image: url("https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawk_mobile.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
       }
 
       .fxs_fedtracker-ecocal-banner p {
@@ -103,6 +107,12 @@
           flex-direction: row;
         }
 
+        .fxs_fedtracker-ecocal-banner-img {
+          flex: 0 0 153px;
+          padding: 0;
+          background-image: url("https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawk_desktop.png");
+        }
+
         .fxs_fedtracker-ecocal-banner-content {
           padding: 24px;
         }
@@ -114,18 +124,7 @@
       }
     </style>
     <div class="fxs_fedtracker-ecocal-banner">
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcset="
-            https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawk_mobile.png
-          "
-        />
-        <img
-          src="https://editorial.fxstreet.com/images/EcoCal/CalendarBanner/hawk_desktop.png"
-          alt="Hawk"
-        />
-      </picture>
+      <div class="fxs_fedtracker-ecocal-banner-img"></div>
       <div class="fxs_fedtracker-ecocal-banner-content">
         <div class="fxs_fedtracker-ecocal-banner-title-description">
           <p class="fxs_fedtracker-ecocal-banner-title">
